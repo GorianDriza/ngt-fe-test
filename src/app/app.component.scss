@@ -1,0 +1,26 @@
+mat-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 2;
+}
+.mat-tab-label-container {
+  z-index: 3;
+  position: relative;
+  background: #fff;
+}
+
+// custom css panel styles for MatSnackBar
+::ng-deep snack-bar-container.success-msg {
+  padding: 20px;
+  background-color: green;
+  color: white;
+}
+
+::ng-deep snack-bar-container.error-msg {
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
