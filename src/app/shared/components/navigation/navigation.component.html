@@ -1,0 +1,26 @@
+<div class="sidebar-header" [ngClass]="{'menu-is-closed': !menuClass}">
+    <div class="row p-0 m-0">
+        <div class="col-9 logo p-0 d-flex align-items-center">
+            <mat-icon>trending_up</mat-icon>
+            <span *ngIf="menuClass">NextGateTech</span>
+        </div>
+        <div class="col-3 menu p-0 d-flex align-items-center justify-content-end">
+            <mat-icon (click)="closeMenu()">menu_open</mat-icon>
+        </div>
+    </div>
+</div>
+<div class="sidebar-navigation" [ngClass]="{'menu-is-closed': !menuClass}">
+    <h4>Navigation</h4>
+    <ul>
+        <li routerLink="/dashboard" routerLinkActive="active">
+            <mat-icon>house</mat-icon>
+            <span *ngIf="menuClass">Dashboard</span>
+            <mat-icon *ngIf="menuClass" class="arrow ml-auto">chevron_right</mat-icon>
+        </li>
+        <li routerLink="/comming-soon" routerLinkActive="active">
+            <mat-icon>hourglass_empty</mat-icon>
+            <span *ngIf="menuClass">Comming Soon</span>
+            <mat-icon *ngIf="menuClass" class="arrow ml-auto">chevron_right</mat-icon>
+        </li>
+    </ul>
+</div>

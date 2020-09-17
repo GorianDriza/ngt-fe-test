@@ -6,7 +6,13 @@ import { RouterModule } from '@angular/router';
 // modules
 import { MaterialModule } from './material.module';
 
-const classesToInclude = [];
+// components
+import { NavigationComponent } from './components/navigation/navigation.component';
+
+
+const classesToInclude = [
+  NavigationComponent
+];
 
 @NgModule({
   imports: [
@@ -19,6 +25,7 @@ const classesToInclude = [];
   declarations: [classesToInclude],
   exports: [
     MaterialModule,
+    NavigationComponent
   ],
   entryComponents: [],
   providers: []

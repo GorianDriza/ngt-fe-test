@@ -1,1 +1,30 @@
-<p>header works!</p>
+<header>
+  <div class="row m-0 align-items-center">
+    <div class="col-6">
+      <div id="main-search" class="main-search">
+        <div class="input-group">
+          <input type="text" id="m-search" placeholder="Search . . ." class="form-control" style="width: 180px;">
+          <span class="input-group-append search-btn btn btn-primary">
+            <mat-icon>search</mat-icon>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 text-right">
+      <mat-icon role="button" [matMenuTriggerFor]="menu">settings</mat-icon>
+    </div>
+  </div>
+</header>
+
+<mat-menu #menu="matMenu" class="custom-menu">
+  <mat-icon class="label">label</mat-icon>
+  <div class="pro-head">
+    <img src="/assets/avatar-1.jpg" alt="User-Profile-Image" class="img-radius">
+    <span>John Doe</span>
+  </div>
+  <ul class="pro-body">
+    <li>
+        <mat-icon>exit_to_app</mat-icon> Log Out
+    </li>
+  </ul>
+</mat-menu>

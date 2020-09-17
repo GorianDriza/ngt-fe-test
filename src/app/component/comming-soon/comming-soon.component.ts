@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard-layout',
-  templateUrl: './dashboard-layout.component.html',
-  styleUrls: ['./dashboard-layout.component.scss']
+  selector: 'app-comming-soon',
+  templateUrl: './comming-soon.component.html',
+  styleUrls: ['./comming-soon.component.scss']
 })
-export class DashboardLayoutComponent implements OnInit {
+export class CommingSoonComponent implements OnInit {
   isMenuOpened = true;
 
   constructor() { }

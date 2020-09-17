@@ -21,6 +21,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 const classesToUse = [
   MatProgressBarModule,
@@ -44,7 +46,9 @@ const classesToUse = [
   MatSelectModule,
   MatProgressSpinnerModule,
   MatStepperModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatPaginatorModule,
+  MatSortModule
 ];
 
 @NgModule({

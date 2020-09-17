@@ -1,0 +1,94 @@
+.sidebar-header {
+    padding: 18px 20px;
+    &.menu-is-closed {
+        padding: 18px 10px;
+    }
+    .logo {
+        mat-icon {
+            background: linear-gradient(-135deg,#1de9b6,#1dc4e9);
+            color: #fff;
+            border-radius: 10px;
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span {
+            margin-left: 10px;
+            font-weight: 100;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+    }
+    .menu {
+        cursor: pointer;
+        mat-icon {
+            color: #fff
+        }
+    }
+}
+.sidebar-navigation {
+    &.menu-is-closed {
+        h4 {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+        ul {
+            li {
+                justify-content: center;
+            }
+        }
+    }
+    h4 {
+        font-size: 10px;
+        font-weight: 600;
+        padding: 25px 20px 5px;
+        text-transform: uppercase;
+        position: relative;
+        color: #e8edf7;
+        display: block;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            color: #fff;
+            text-align: left;
+            padding: 7px 15px;
+            margin: 5px 0 0;
+            display: block;
+            border-radius: 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            outline: none;
+            &.active {
+                background: #333f54;
+            }
+            mat-icon {
+                font-size: 21px;
+                padding: 4px 7px;
+                margin-right: 7px;
+                border-radius: 4px;
+                display: inline-flex;
+                align-items: center;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                top: -1px;
+                &.arrow {
+                    font-size: 16px;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
