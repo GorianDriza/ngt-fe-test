@@ -4,7 +4,7 @@
         z-index: 1029;
         box-shadow: 1px 0 20px 0 #3f4d67;
         width: 264px;
-        height: 100vh;
+        min-height: 100vh;
         background: #3f4d67;
         color: #a9b7d0;
         transition-duration: 400ms;
@@ -21,7 +21,11 @@
         transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
         transition-property: transform,margin-left,margin-right;
         &.opened-content {
-            margin-left: 100px !important;    
+            margin-left: 100px !important;
         }
+    }
+    app-dashboard {
+      padding: 20px;
+      display: block;
     }
 }
